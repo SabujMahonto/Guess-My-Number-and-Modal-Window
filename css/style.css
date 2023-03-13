@@ -28,6 +28,7 @@ body{
     display: flex;
     gap: 5rem;
     margin-bottom: 5rem;
+    z-index: 1;
 }
 .btn{
     font-family: inherit;
@@ -46,7 +47,7 @@ body{
     color: #444;
 }
 
-.modals{
+.modal{
     background-color: #fff;
     width: 100%;
     height: 50vh;
@@ -58,8 +59,35 @@ body{
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
     position: relative;
     transition: all .3s ease-in-out;
+    z-index: 3;
+    opacity: 0;
+    visibility:hidden;
 
 }
-.modals h1{
+.modal h1{
     margin-bottom: 2rem;
+}
+
+.modal span{
+    position:absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.modal p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* background: aquamarine; */
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility:hidden;
 }
