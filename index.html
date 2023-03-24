@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="game-sereen">
-    <div class="game-header">
-      <div class="btn play-again">Play Again</div>
-      <p>Between 1 or 20</p>
-      <h2 class="game-title">Guess my Num</h2>
-      <div class="game-correct-ans">?</div>
-      <div class="game-guese-screen">
-        <div class="check-sereen">
-          <input class = "input-num"type="number" name="" id="">
-          <button class="btn check">checked</button>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-sereen">
+        <div class="game-header">
+            <button class="btn">Play Again</button>
+            <p>Between 1 or 20</p>
         </div>
-        <div class="score-sereen">
-          <p class="gueseing-text">Start guessing...</p>
-          <p>Score : <span class="score">20</span></p>
-          <p>Hightscore : <span class="Highscore">0</span></p>
-          <p>score : <span class="score">20</span></p>
+        <div class="game-title">
+          <h2>Guess my Num</h2>
+        </div>
+        <div class="game-correct-ans">?</div>
+        <div class="game-guess-screen">
+          <div class="check-screen">
+            <input class="input-num" type="number" />
+            <button class="btn check">checked</button>
+          </div>
+          <div class="score-screen">
+            <p class="gueseing-text">Start guessing...</p>
+            <p>Score : <span class="score">20</span></p>
+            <p>Hightscore : <span class="Highscore">0</span></p>
+            
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-    
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

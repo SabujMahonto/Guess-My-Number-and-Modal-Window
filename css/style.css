@@ -1,26 +1,97 @@
-
 /* google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&family=Poppins:wght@200;300;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&family=Poppins:wght@200;300;500;600;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
 }
 
-body{
-    font-family: "Exo" sans-serif;
-    background-color: whitesmoke;
-    color: #444;
-    overflow: hidden;
-    font-weight: 500;
+body {
+  font-family: "Exo" sans-serif;
+  background-color: #222;
+  color: #eaeaea;
+  font-size: 2rem;
+  overflow: hidden;
+  font-weight: 600;
 }
-.container{
-    width: 80%;
-    margin: 5rem auto;
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: teal;
+  color: #eaeaea;
+}
+.game-sereen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.game-title {
+  align-self: center;
+  font-size: 2rem;
+}
+.game-correct-ans {
+  background-color: teal;
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  font-size: 3.2rem;
+}
+.game-guess-screen {
+display: flex;
+justify-content: space-around;
+margin-bottom: 2rem;
+}
+.check-screen {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.input-num{
+    font-size: 3.5rem;
+    font-size: 3rem;
+    max-width: 12rem;
+    color: #222;
+    font-weight: 700;
+    padding: 0.2rem;
+    text-align: center;
+ 
+}
+.check{
+    width: 12rem;
+}
+
+.score-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
