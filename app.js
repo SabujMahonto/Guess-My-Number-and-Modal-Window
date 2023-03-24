@@ -56,5 +56,12 @@ check.addEventListener("click", function(){
 
 // play again 
 playAgain.addEventListener("click", function(){
-   
+SCORE = 20;
+const SECRET_NUM = Math.trunc(Math.random()* 20 +1);
+displayGuessingTest("start guessing ...")
+document.body.style.backgroundColor = "#222";
+correctAns.style.backgroundColor = "teal"
+correctAns.textContent = "?"
+score.textContent = SCORE;
+input.value = ""
 })
